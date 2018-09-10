@@ -1,0 +1,26 @@
+{
+  "name": "react-typescript-parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "yarn parcel index.html",
+    "build": "yarn parcel build index.html",
+    "build_docker": "docker build -t tsvayer/react-ts-parcel .",
+    "start_docker": "docker run --rm --name react -p 8080:80 tsvayer/react-ts-parcel"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^16.4.13",
+    "@types/react-dom": "^16.0.7",
+    "node-sass": "^4.9.3",
+    "parcel-bundler": "^1.9.7",
+    "postcss-modules": "^1.3.2",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0"
+  }
+}
