@@ -1,5 +1,4 @@
-import * as React from 'react'
-import * as ReactDom from 'react-dom'
+import React from 'react'
 import styles from './App.css'
 import data from './data.json'
 
@@ -11,7 +10,7 @@ export default class App extends React.Component {
       <h1 className={styles.red}>
         {data.title}
         <MyComponent />
-      </ h1>
+      </h1>
     )
   }
 }

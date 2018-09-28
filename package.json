@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "yarn parcel index.html",
-    "build": "yarn parcel build index.html",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "build_docker": "docker build -t tsvayer/react-ts-parcel .",
     "start_docker": "docker run --rm --name react -p 8080:80 tsvayer/react-ts-parcel"
   },
