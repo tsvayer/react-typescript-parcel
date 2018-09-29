@@ -9,4 +9,4 @@ RUN yarn
 RUN yarn build
 
 FROM nginx:alpine
-COPY --from=0 /app/dist /usr/share/nginx/html
+COPY --from=builder /app/dist /usr/share/nginx/html
